@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Styled Audio Player</title>
+</head>
+<body>
+    <div id="audio-player">
+        <div class="player-header">
+            <div class="album-art">
+                <img src="./images/logo.png" alt="Album Art">
+            </div>
+            <div class="track-info">
+                <h2 id="track-name">Track Name</h2>
+                <p id="artist-name">Artist Name</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="prevBtn"> &lt </button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">></button>
+            
+            <div class="control-group">
+                <label for="volumeControl">Volume</label>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.05" value="1">
+            </div>
+            
+            <div class="control-group">
+                <label for="playbackSpeed">Speed</label>
+                <input type="range" id="playbackSpeed" min="0.5" max="2" step="0.1" value="1">
+            </div>
+            
+            <div class="control-group">
+                <label for="playbackSeek">Seek</label>
+                <input type="range" id="playbackSeek" min="0" max="100" step="1">
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
